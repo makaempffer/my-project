@@ -1,13 +1,13 @@
 
-export function NavBar() {
+export default function NavBar() {
     return (
-      <nav className="relative container mx-auto p-6">
+      <nav className="relative container mx-auto p-6 border-b border-veryLightBlue">
         <div className="flex items-center justify-between">
-          <a href="#home"><h1 className="font-roboto font-bold text-3xl text-white py-2 pl-40 tracking-wider">Loren Ipsum.</h1></a>
+          <a href="/"><h1 className="font-roboto font-bold text-3xl text-white py-2 md:pl-40 tracking-wider">Loren Ipsum.</h1></a>
           <div className="hidden md:flex space-x-24 text-white pr-40 font-outfit">
-              <a className='hover:text-slate-500' href="#home">Home</a>
+              <a className='hover:text-slate-500' href="/">Home</a>
+              <a className='hover:text-slate-500' href="/projects">Projects</a>
               <a className='hover:text-slate-500' href="#about">About</a>
-              <a className='hover:text-slate-500' href="#products">Products</a>
               <a className='hover:text-slate-500' href="#contact">Contact</a>
           </div>
         </div>
