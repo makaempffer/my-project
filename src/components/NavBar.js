@@ -1,15 +1,14 @@
-import Menu from '../assets/menu_icon.png';
+
 export default function NavBar() {
     return (
-      <nav className="relative container mx-auto p-6 border-b border-veryLightBlue">
-        <div className="flex items-center justify-between">
-          <a href="/"><h1 className="font-roboto font-bold text-3xl text-white py-2 md:pl-40 tracking-wider">Loren Ipsum.</h1></a>
-          <button><img className='md:hidden active:rotate-45' src={Menu}></img></button>
-          <div className="hidden md:flex space-x-24 text-white pr-40 font-outfit">
-              <a className='hover:text-slate-500' href="/">Home</a>
-              <a className='hover:text-slate-500' href="/projects">Projects</a>
-              <a className='hover:text-slate-500' href="#about">About</a>
-              <a className='hover:text-slate-500' href="#contact">Contact</a>
+      <nav className="md:container mx-auto p-6 border-b border-veryLightBlue">
+        <div className="md:flex items-center justify-between">
+          <a href="/"><p className="font-roboto font-bold text-3xl pl-20 text-white py-2 md:pl-20 tracking-wider hover:underline decoration-sky-500">David Kaempffer.</p></a>
+          <div className="space-x-10 pt-5 pl-5 md:flex md:space-x-20 md:pr-40">
+              <a className='hover:text-slate-500 text-white font-outfit hover:scale-125 duration-300' href="/">Home</a>
+              <a className='hover:text-slate-500 text-white font-outfit hover:scale-125 duration-300' href="/projects">Projects</a>
+              <a className='hover:text-slate-500 text-white font-outfit hover:scale-125 duration-300' href="#about">About</a>
+              <a className='hover:text-slate-500 text-white font-outfit hover:scale-125 duration-300' href="#contact">Contact</a>
           </div>
         </div>
       </nav>
